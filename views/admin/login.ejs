@@ -1,0 +1,19 @@
+<%- include ('../partials/header.ejs')  %>
+    <div class="container">
+        <div><% if (errors) { %>
+         <%= errors %> 
+        <% } %></div>
+        <form action="/admin/login" method="POST">
+            <div>
+                <label for="name" class="form-label">Name</label>
+                <input type="text" id="name" class="form-control" name="username" required>
+              </div>
+              <div>
+                <label for="password" class="form-label">Password</label>
+                <input type="password" id="password" class="form-control" name="password" required>
+              </div>
+              <button type="submit" class="btn btn-outline-dark mt-3">Login</button>
+        </form>
+    </div>
+</body>
+</html>

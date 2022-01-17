@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ font-family: 'Lato', sans-serif;
+ color: rgba(25, 25, 25, 0.999);
+
+}
+body {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.99);
+}
+.artsCon {
+  margin: 1rem auto;
+  height: 20vh; 
+  width: 75%;
+  border-radius: 14px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);   
+  position: relative;
+}
+
+.dateShow {
+    position: absolute;
+    top: -5rem;
+    right: -5rem;
+    width: 10rem;
+    height: 8rem;
+    background-color: black;
+}
+.show-img {
+  height: 60vh;
+  width: 100%;
+}
+
+.show-img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.show-container {
+  position: absolute;
+  top: 39vh;
+  width: 75vw;
+  right: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.534);
+  padding: 20px 50px;
+  margin: 0 auto;
+  border-radius: 8px ;
+}
+
+@media screen and (max-width: 400px) {
+  .show-container {
+    top: 39vh;
+    width: 89vw;
+    background-color: rgba(255, 255, 255, 0.534);
+    padding: 18px 20px;
+    border-radius: 8px ;
+  }
+}
