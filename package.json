@@ -1,5 +1,5 @@
 {
-  "name": "zales",
+  "name": "zortar",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -26,8 +26,7 @@
     "nodemon": "^2.0.15"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start":"node server.js"
   },
   "keywords": [],
   "author": "",

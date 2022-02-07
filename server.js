@@ -22,7 +22,7 @@ mongoose.connection.once('open', function () {
 }).on('error', function(error) {
     console.log('connection error', error)
 })
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 
 const store = new mongoDBSession({
