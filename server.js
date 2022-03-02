@@ -59,6 +59,9 @@ app.use('/articles', articleLoader)
 
 app.use('/admin', adminLoader)
 
+app.get('/', (req, res) => {
+    res.redirect('/articles')
+})
 
 app.listen(PORT , () => {
     console.log('port started');

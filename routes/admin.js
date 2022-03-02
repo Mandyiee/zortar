@@ -35,10 +35,11 @@ router.post('/register', [
         return res.render('admin/register', { errors: errors.array() })
     }
 
-    const check1 = await Admin.find();
+    const check1 = await Admin.countDocuments();
+    
 
-    if (check1) {
-        return res.redirect('/articles')   
+    if (!check1) {
+     return res.redirect('/articles')   
     }
 
     const admin = new Admin({
