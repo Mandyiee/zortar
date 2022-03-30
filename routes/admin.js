@@ -38,7 +38,7 @@ router.post('/register', [
     const check1 = await Admin.countDocuments();
     
 
-    if (!check1) {
+    if (check1) {
      return res.redirect('/articles')   
     }
 
